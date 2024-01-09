@@ -1,8 +1,8 @@
-import os from 'os';
+const os = require('node:os');
 
 function obtenerInfo() {
     return {
-        Nombre: os.hostname(),
+        Nombre: os.platform(),
         Tipo: os.type(),
         Versión: os.version(),
         Arquitectura: os.arch(),
@@ -11,5 +11,4 @@ function obtenerInfo() {
         MemoriaLibre: `${(os.freemem() / 1024 / 1024).toFixed(2)} MB`
     };
 }
-
 module.exports = { obtenerInfo };

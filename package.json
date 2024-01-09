@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "network-interface": "^18.0.1",
+    "os": "^0.1.2"
+  }
+}
